@@ -1,6 +1,7 @@
 package com.jop.pokedexjetpack.di
 
 import com.jop.web.ApiService
+import com.jop.web.BaseApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -17,7 +18,7 @@ object RetrofitModule {
     @Provides
     fun provideRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://pokeapi.co/api/v2/")
+            .baseUrl(BaseApi.BaseApi)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
@@ -27,15 +28,4 @@ object RetrofitModule {
     fun provideApiService(retrofit: Retrofit): ApiService {
         return retrofit.create(ApiService::class.java)
     }
-
-//    private val retrofit = RetrofitModule.Builder()
-//        .baseUrl("https://pokeapi.co/api/v2/")
-//        .addConverterFactory(GsonConverterFactory.create())
-//        .build()
-//        .create(ApiService::class.java)
-//
-//
-//    fun getApiService(): ApiService {
-//        return retrofit
-//    }
 }
