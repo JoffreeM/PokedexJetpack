@@ -16,3 +16,5 @@ dependencyResolutionManagement {
 rootProject.name = "Pokedex Jetpack"
 include ':app'
 include ':web'
+include ':database'
+include ':domain'

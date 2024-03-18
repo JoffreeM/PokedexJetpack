@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Pokedex</string>
+
+<!--    home-->
+    <string name="home_title">Pokemon</string>
+    <string name="input_placeholder_search">Buscar pokemon</string>
+
+<!--    modal details pokemon-->
+    <string name="details_type">Tipo:</string>
+    <string name="details_hp">Puntos de Salud:</string>
+    <string name="details_speed">Velocidad:</string>
+    <string name="details_attack">Ataque:</string>
+    <string name="details_defense">Defensa:</string>
+    <string name="details_specialAttack">Ataque especial:</string>
+    <string name="details_specialDefense">Defensa especial:</string>
+    <string name="details_height">Altura:</string>
+    <string name="details_weight">Peso:</string>
+
+<!--    favorite-->
+    <string name="favorite_title">Pokemones favoritos</string>
+
+<!--    menu drow-->
+    <string name="select_text_default">Seleccionar</string>
+
 </resources>
